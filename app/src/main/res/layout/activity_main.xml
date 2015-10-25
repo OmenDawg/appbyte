@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+   <TimePicker
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/timePickerAlarm"
+       android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+   </TimePicker>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alarm On/Off"
+        android:id="@+id/timePickerAlarm"
+        android:layout_below="@+id/stopButtonAlarm"
+        android:onClick="onToggleClicked"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:layout_below="@+id/toggleButtonAlarm"
+        android:id="@+id/textViewAlarm"/>
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
